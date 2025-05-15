@@ -1,0 +1,7 @@
+{
+    "editor.formatOnSave": true,
+    "tabWidth": 2,
+    "bracketSpacing": true,
+    "singleQuote": true,
+    "semi": true
+}

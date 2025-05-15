@@ -1,0 +1,36 @@
+.container {
+    background-color: #fff;
+    border-radius: 7px;
+    padding: 16px;
+    margin: 16px 0px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+}
+
+.header img {
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+}
+
+.header p {
+    margin: 0;
+    color: #1463FF;
+    font-weight: 700;
+    font-size: 1.2rem;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.description {
+    margin: 0;
+    margin-top: 8px;
+    color: #303030;
+    font-weight: 400;
+    font-size: 0.9rem;
+}

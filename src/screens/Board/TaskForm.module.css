@@ -1,0 +1,66 @@
+ .formContainer {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #fff;
+    border-radius: 7px;
+    padding: 16px;
+    row-gap: 16px;
+}
+
+.formContainer label {
+    display: flex;
+    flex-direction: column;
+    row-gap: 4px;
+    color: #303030;
+    font-weight: 600;
+    width: 100%;
+}
+
+.formContainer input, textarea {
+    border-radius: 7px;
+    border-color: #ddd;
+    border-style: solid;
+    padding: 6px 12px;
+    border-width: 1px;
+    max-width: 100%;
+    min-height: 32px;
+    max-height: 15rem;
+    font-family: inherit;
+}
+
+.actions {
+    display: flex;
+    column-gap: 8px;
+    cursor: pointer;
+}
+
+.actions button {
+    border-style: solid;
+    padding: 8px 12px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 100ms ease-in-out;
+}
+
+.buttonPrimary {
+    font-weight: 600;
+    color: #fff;
+    border: 1px solid #0030CC;
+    box-shadow: 0px 1px 4px 0px #0000000A;
+    background-color: #1463FF;
+}
+
+.buttonPrimary:hover {
+    background-color: #0030CC;
+}
+
+.buttonSecondary {
+    font-weight: 400;
+    color: #303030;
+    border-width: 0;
+    background-color: #fff;
+}
+
+.buttonSecondary:hover {
+    background-color: #ddd; 
+}
