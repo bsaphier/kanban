@@ -17,15 +17,17 @@
 }
 
 .formContainer input, textarea {
+    box-sizing: border-box;
     border-radius: 7px;
     border-color: #ddd;
     border-style: solid;
     padding: 6px 12px;
     border-width: 1px;
+    min-width: 100%;
     max-width: 100%;
     min-height: 32px;
     max-height: 15rem;
-    font-family: inherit;
+    font-family: inherit;    
 }
 
 .actions {
@@ -44,21 +46,35 @@
 
 .buttonPrimary {
     font-weight: 600;
-    color: #fff;
-    border: 1px solid #0030CC;
+    color: var(--color-primary);
+    border: 2px solid var(--color-primary);
     box-shadow: 0px 1px 4px 0px #0000000A;
-    background-color: #1463FF;
+    background-color: transparent;
 }
 
 .buttonPrimary:hover {
-    background-color: #0030CC;
+    color: #fff;
+    background-color: var(--color-primary);
+}
+
+.buttonError {
+    font-weight: 600;
+    color: var(--color-error);
+    border: 2px solid var(--color-error);
+    box-shadow: 0px 1px 4px 0px #0000000A;
+    background-color: transparent;
+}
+
+.buttonError:hover {
+    color: #fff;
+    background-color: var(--color-error);
 }
 
 .buttonSecondary {
     font-weight: 400;
     color: #303030;
     border-width: 0;
-    background-color: #fff;
+    background-color: transparent;
 }
 
 .buttonSecondary:hover {

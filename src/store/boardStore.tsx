@@ -26,6 +26,7 @@ type BoardStore = {
     taskIndex: number,
     updatedTaskData: TaskData
   ) => void;
+  deleteTask: (columnId: string, taskIndex: number) => void;
   setBoard: (board: Board) => void;
   clearBoard: () => void;
 };
@@ -105,6 +106,18 @@ const useBoardStore = create<BoardStore>()(
               ...newTasks[taskIndex],
               ...updatedTaskData,
             };
+            return {
+              board: {
+                ...state.board,
+                [columnId]: newTasks,
+              },
+            };
+          }),
+
+        deleteTask: (columnId, taskIndex) =>
+          set((state) => {
+            const newTasks = [...state.board[columnId]];
+            newTasks.splice(taskIndex, 1);
             return {
               board: {
                 ...state.board,

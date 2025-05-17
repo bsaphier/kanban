@@ -1,9 +1,11 @@
-export default function PlusIcon() {
+import { SVGProps } from 'react';
+
+export default function PlusIcon(props: SVGProps<SVGSVGElement>) {
   return (
-    <svg viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" {...props}>
       <path
-        d="M14 6.99966C14 7.44726 13.6399 7.80736 13.1923 7.80736H7.8077V13.192C7.8077 13.6379 7.44592 14 7.00001 14C6.55409 14 6.19231 13.6396 6.19231 13.192V7.80736H0.807693C0.361779 7.80736 0 7.44591 0 7C0 6.55543 0.361779 6.19197 0.807693 6.19197H6.19231V0.807356C6.19231 0.361442 6.55409 0 7.00001 0C7.44592 0 7.8077 0.361442 7.8077 0.807356V6.19197H13.1923C13.6399 6.19197 14 6.55543 14 6.99966Z"
-        fill="#474747"
+        fill="currentColor"
+        d="M19,11H13V5a1,1,0,0,0-2,0v6H5a1,1,0,0,0,0,2h6v6a1,1,0,0,0,2,0V13h6a1,1,0,0,0,0-2Z"
       />
     </svg>
   );

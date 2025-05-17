@@ -1,4 +1,12 @@
+
 :root {
+  --color-primary: #4441fb;
+  --color-primary-light: #8e8cfd; /* HSL(241°, 96%, 77%) */
+  --color-primary-dark:  #0905eb;
+
+  --color-error: #e53e3e;
+  --color-error-bg: #fdecea;
+  --color-error-border: #f2aab1;
   /* font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400; */
