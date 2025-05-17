@@ -1,3 +1,4 @@
+import { expect, it, vi } from 'vitest';
 import { render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import TaskForm from './TaskForm';
@@ -13,8 +14,8 @@ Object.defineProperty(window, 'crypto', {
 
 it('calls onSubmit with correct form data when submitted', async () => {
   const user = userEvent.setup();
-  const mockOnSubmit = jest.fn();
-  const mockOnCancel = jest.fn();
+  const mockOnSubmit = vi.fn();
+  const mockOnCancel = vi.fn();
 
   render(<TaskForm onSubmit={mockOnSubmit} onCancel={mockOnCancel} />);
 
@@ -42,7 +43,7 @@ it('calls onSubmit with correct form data when submitted', async () => {
 
 it('calls onCancel when cancel button is clicked', async () => {
   const user = userEvent.setup();
-  const mockOnCancel = jest.fn();
+  const mockOnCancel = vi.fn();
 
   render(<TaskForm onCancel={mockOnCancel} />);
 
