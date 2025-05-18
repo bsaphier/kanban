@@ -1,7 +1,7 @@
 .column {
   padding: 16px;
   padding-top: 0px;;
-  background: #F1F1F1;
+  background: var(--color-surface);
   border-radius: 6px;
   width: 18rem;
   max-width: calc(100vw - 6rem);
@@ -17,7 +17,7 @@
 .header {
   display: flex;
   align-items: center;
-  background: #F1F1F1;
+  background: var(--color-surface);
   padding-top: 16px;
   position: sticky;
   top: 0;
@@ -27,7 +27,7 @@
   margin: 0;
   font-size: 1.5rem;
   line-height: 2rem;
-  color: #000;
+  color: var(--text-primary);
 }
 
 .button {
@@ -41,6 +41,8 @@
   width: 20px;
   height: 20px;
   color: var(--color-primary);
+  background: unset;
+  border-radius: 50%;
 }
 
 .formWrapper {

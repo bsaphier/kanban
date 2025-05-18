@@ -1,5 +1,5 @@
 .container {
-    background-color: #fff;
+    background-color: var(--color-background);
     border-radius: 7px;
     margin: 16px 0px;
 }
@@ -28,12 +28,13 @@
     text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap;
+    color: var(--text-primary);
 }
 
 .description {
     margin: 0;
     margin-top: 8px;
-    color: #303030;
+    color: var(--text-secondary);
     font-weight: 400;
     font-size: 0.9rem;
 }
