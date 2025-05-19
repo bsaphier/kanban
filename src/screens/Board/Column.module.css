@@ -38,8 +38,9 @@
   align-items: center;
   justify-content: center;
   margin-left: auto;
-  width: 20px;
-  height: 20px;
+  min-width: 28px;
+  width: 28px;
+  height: 28px;
   color: var(--color-primary);
   background: unset;
   border-radius: 50%;
