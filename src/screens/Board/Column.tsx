@@ -31,7 +31,6 @@ export default function Column({ id, title, tasks }: ColumnProps) {
         <h2 className={styles.title}>{title}</h2>
         {tasks.length < 100 && (
           <button
-            type="button"
             title="Add task"
             className={styles.button}
             onClick={handleDisplayForm}
